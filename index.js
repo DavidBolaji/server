@@ -12,7 +12,7 @@ app.use(cors({
 let content = [];
 
 app.post('/', (req,res) => {
-    
+
     
     if(!req.query.fname || !req.query.lname || !req.query.address || !req.query.hobbies) {
         return res.send({
@@ -34,6 +34,10 @@ app.post('/', (req,res) => {
         success: 'success'
     })
 
+})
+
+app.get('/', (req,res) => {
+    res.send(content)
 })
 
 
