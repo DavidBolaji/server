@@ -28,8 +28,8 @@ app.post('/', (req,res) => {
     }
 
     content.push(formObj);
-    console.log(content);
-    console.log(content[0].hobbies[0]);
+    
+    
     res.send({
         success: 'success'
     })
